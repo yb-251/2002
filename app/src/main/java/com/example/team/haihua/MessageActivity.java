@@ -1,10 +1,10 @@
 package com.example.team.haihua;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,19 +30,18 @@ public class MessageActivity extends AppCompatActivity {
     private List<GiftMessage> list;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
         ButterKnife.bind(this);
         initView();
         initData();
     }
 
-
-    protected void initView() {
+    protected void initView(){
         list = new ArrayList();
         GiftMessage m = new GiftMessage();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++){
             m.setName("已有1497304位用户赢得精美好礼");
             m.setGift("你拆到心仪礼品了吗");
             m.setCan("点击查看");
@@ -58,14 +57,14 @@ public class MessageActivity extends AppCompatActivity {
         rlv_message.setLayoutManager(new LinearLayoutManager(this));
         MessageAdapter messageAdapter = new MessageAdapter(this, list);
         rlv_message.setAdapter(messageAdapter);
-
         llMess.addView(inflate);
 
-        /*messageAdapter.setOnCliItemJump(new SecendImageAdapter.OnCliItemJump() {
+
+        messageAdapter.setOnCliItemJump(new SecendImageAdapter.OnCliItemJump() {
             @Override
             public void onCliJump(int pos) {
-
+                Toast.makeText(MessageActivity.this, "嗯", Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
     }
 }

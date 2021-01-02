@@ -63,6 +63,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
             super(itemView);
             txtTime = itemView.findViewById(R.id.txt_time);
             imgMusic = itemView.findViewById(R.id.img_music);
+            txtGift = itemView.findViewById(R.id.txt_gift);
             txtName = itemView.findViewById(R.id.txt_gift);
             txtCan = itemView.findViewById(R.id.txt_can);
         }
