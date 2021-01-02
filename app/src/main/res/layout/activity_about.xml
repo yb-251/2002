@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".lihaha.AboutActivity">
+    <ImageView
+        android:layout_marginTop="@dimen/dp_150"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:src="@mipmap/shou_img"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="季风音乐"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/dp_30"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0"
+        android:textSize="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="《用户注册协议》《用户隐私协议》《儿童隐私政策》"
+        android:textColor="#03A9F4"
+        android:textSize="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_80"
+        />
+    <TextView
+        android:id="@+id/zizheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="资质证照公示"
+
+        android:textSize="@dimen/dp_12"
+        android:autoLink="all
+"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:text="2020季风音乐教育科技有限公司"
+        android:scrollIndicators="bottom"
+        android:textSize="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+</LinearLayout>

@@ -2,8 +2,15 @@ package com.example.team;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+
+import com.example.team.lihaha.AboutActivity;
+import com.example.team.lihaha.CommentActivity;
+import com.example.team.lihaha.OrderActivity;
+import com.example.team.lihaha.RegistTableActivity;
+import com.example.team.lihaha.RegistionActivity;
+import com.example.team.lihaha.WangLeLeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();
+        //制式看看界面
+        initstart();
     }
 
-    private void initView() {
-        Toast.makeText(this, "hahahah", Toast.LENGTH_SHORT).show();
+    private void initstart() {
+        startActivity(new Intent(this, WangLeLeActivity.class));
     }
+
+
 }
