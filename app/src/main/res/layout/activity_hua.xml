@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-<Button
-    android:id="@+id/jump"
-    android:background="#ff00ff"
+    tools:context=".haihua.HuaActivity">
+<TextView
+    android:id="@+id/txt_title"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:textSize="@dimen/dp_40"
-    android:text="代组长，看详情"
+    android:text="我的作业"
     android:gravity="center"
+    android:textSize="@dimen/sp_30"
     android:layout_width="match_parent"
-    android:layout_height="200dp"/>
-
+    android:layout_height="@dimen/dp_60"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gRecycle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>

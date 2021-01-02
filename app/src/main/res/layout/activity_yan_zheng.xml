@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".haihua.YanZhengActivity">
+    <LinearLayout
+        android:id="@+id/one"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60">
+        <TextView
+            android:text="验证码登录"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:textSize="@dimen/sp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="|"
+            android:gravity="center"
+            android:textSize="@dimen/sp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="验证码登录"
+            android:gravity="center"
+            android:textSize="@dimen/sp_30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/two"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        android:text="未注册手机号码将直接注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/there"
+        android:hint="    +86   |   18812341234"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/fore"
+        android:hint="    1234                            获取验证码"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintTop_toBottomOf="@+id/there"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_jump"
+        app:layout_constraintTop_toBottomOf="@+id/fore"
+        android:text="登录"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/shape_radio"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_marginRight="@dimen/sp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"/>
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@+id/btn_jump"
+        android:textSize="@dimen/sp_10"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="登录即代表同意《中国移动认证服务条款》和用户协议"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

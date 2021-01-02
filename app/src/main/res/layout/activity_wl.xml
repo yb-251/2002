@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".haihua.WlActivity">
+    <RelativeLayout
+        android:id="@+id/rel_one"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100">
+        <TextView
+            android:id="@+id/txt_one"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textSize="@dimen/sp_18"
+            android:text="订单编号：2322223"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_two"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textSize="@dimen/sp_18"
+            android:text="快递单号：123456"
+            android:layout_below="@+id/txt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="中通快递"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginRight="@dimen/dp_15"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/view_one"
+        android:background="#fff"
+        app:layout_constraintTop_toBottomOf="@+id/rel_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_6"/>
+    <LinearLayout
+        android:id="@+id/lin_one"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02_02     12:01 "
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02_02     12:01 "
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02_02     12:01 "
+            android:layout_weight="1"/>
+        <TextView
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="02_02     12:01 "
+        android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02_02     12:01 "
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_two"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/lin_one"
+        app:layout_constraintRight_toLeftOf="@id/lin_the"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收 |"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="|    |"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="|    |"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="|    |"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="|    |"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="|    |"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_the"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/lin_two"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="[收货地址] 北京市朝阳区朝阳大街     朝阳大厦233233——2313"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已签收       您的订单已签收，感谢您的选择，欢迎再次光临"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的订单已签收，感谢您的选择，欢迎再次光临"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的订单已签收，感谢您的选择，欢迎再次光临"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的订单已签收，感谢您的选择，欢迎再次光临"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的订单已签收，感谢您的选择，欢迎再次光临"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
