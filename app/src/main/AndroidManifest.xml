@@ -10,12 +10,64 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".lou.BookOneToOneActivity" >
+
+
+
+        </activity>
+        <activity android:name=".lou.UserInfoActivity" >
+
+
+
+
+
+        </activity>
+
+        <activity android:name=".lou.BaseActivity"/>
+
+        <activity android:name=".lou.CouponActivity">
+
+
+
+        </activity>
+        
+        <activity android:name=".lou.OnlineServiceActivity">
+
+
+        </activity>
+
+        <activity android:name=".lou.LiveCourseActivity" android:screenOrientation="landscape">
+
+
+
+        </activity>
+
+        <activity android:name=".lou.LiveOneToOneActivity" android:screenOrientation="landscape" >
+
+
+
+        </activity>
+
+        <activity android:name=".lou.CurriculumActivity">
+
+
+        </activity>
+
+        <activity android:name=".lou.AgreementActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+
+        <activity android:name=".lou.FeedBackActivity"/>
+
     </application>
 
 </manifest>

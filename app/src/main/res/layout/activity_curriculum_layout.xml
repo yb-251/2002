@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="40dp"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="#FEA624"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_curriculum_edit_radius"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="直播课程"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView71"
+        app:layout_constraintEnd_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toTopOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_marginLeft="12dp"
+        android:text="系列课程"
+        app:layout_constraintBottom_toBottomOf="@+id/textView70"
+        app:layout_constraintStart_toEndOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="音乐素养"
+        android:textColor="#333333"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@id/textView76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="乐器"
+        android:textColor="#333333"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView75"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="声乐考级"
+        android:textColor="#333333"
+        app:layout_constraintEnd_toStartOf="@id/textView74"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/textView76"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="成人学习"
+        android:textColor="#333333"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@id/textView75"
+        app:layout_constraintStart_toEndOf="@+id/textView73"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="明星教师"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView3" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView4"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="100dp"
+        android:textColor="#F5F6F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView78"
+        app:srcCompat="@mipmap/home" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView78"
+        app:srcCompat="@mipmap/mine" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintEnd_toStartOf="@id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView78"
+        app:srcCompat="@mipmap/action" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintEnd_toStartOf="@id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView78"
+        app:srcCompat="@mipmap/video" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="首页"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="我的"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="活动"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="课程"
+        android:textColor="#FEA624"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

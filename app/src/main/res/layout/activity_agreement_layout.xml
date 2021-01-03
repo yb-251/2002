@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/shape_feed_back_white_radius5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="用户协议与隐私协议"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="欢迎使用季风音乐在线教育服务，在使用季风音乐之前请您仔细阅读用户协议。季风音乐感谢您的理解与信任。"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="欢迎使用季风音乐在线教育，xxxxxx。季风音乐感谢您的使用和信任！欢迎使用季风音乐在线教育，xxxxxx。季风音乐感谢您的使用和信任！"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="您可阅读《用户协议与隐私政策》了解详情信息。如您同意，请点击“同意”开始接受我们的服务。"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape_agreement_line"
+            android:gravity="center"
+            android:text="不同意"
+            android:textColor="#FE6422"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape_book_btn_radius45"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
