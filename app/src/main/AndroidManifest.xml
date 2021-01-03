@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lihaha.WangLeLeActivity"></activity>
+        <activity android:name=".lihaha.OrderDetilsActivity"></activity>
+        <activity android:name=".lihaha.QuessionActivity" />
+        <activity android:name=".lihaha.WangLeLeActivity" />
         <activity android:name=".lihaha.OrderActivity" />
         <activity android:name=".lihaha.AboutActivity" />
         <activity android:name=".lihaha.RegistTableActivity" />

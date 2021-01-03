@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/xvhao"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="01"
+        android:gravity="center"
+        android:background="@mipmap/message"
+        android:textSize="@dimen/dp_25"
+        />
+    <TextView
+        android:id="@+id/what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/xvhao"
+        android:text="什么是土星?"
+        android:padding="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textSize="@dimen/dp_25"
+        />
+    <ImageView
+        android:id="@+id/jiantou"
+        android:src="@mipmap/jiantou"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/que_content"
+        android:textSize="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@+id/what"
+        app:layout_constraintLeft_toLeftOf="@id/what"
+        
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

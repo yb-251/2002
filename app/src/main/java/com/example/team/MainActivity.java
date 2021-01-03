@@ -8,6 +8,8 @@ import android.os.Bundle;
 import com.example.team.lihaha.AboutActivity;
 import com.example.team.lihaha.CommentActivity;
 import com.example.team.lihaha.OrderActivity;
+import com.example.team.lihaha.OrderDetilsActivity;
+import com.example.team.lihaha.QuessionActivity;
 import com.example.team.lihaha.RegistTableActivity;
 import com.example.team.lihaha.RegistionActivity;
 import com.example.team.lihaha.WangLeLeActivity;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initstart() {
-        startActivity(new Intent(this, WangLeLeActivity.class));
+        startActivity(new Intent(this, OrderDetilsActivity.class));
     }
 
 
