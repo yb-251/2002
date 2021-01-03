@@ -9,13 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".lgs.ParentActivity"></activity>
+        <activity android:name=".lgs.EventActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lgs.CoursepurchaseActivity" />
+        <activity android:name=".lgs.CourseActivity"></activity>
+        <activity android:name=".lgs.CourseofstudyActivity" />
+        <activity android:name=".lgs.JfActivity" />
+        <activity android:name=".lgs.Coursepayment2Activity" />
+        <activity android:name=".lgs.TrainActivity" />
+        <activity android:name=".lgs.Coursepayment1Activity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

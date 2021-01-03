@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#F8F9EB">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排名情况"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_even1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_1" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/image1"
+            app:layout_constraintTop_toTopOf="@id/image1">
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3232"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="北京市"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_10" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/ll"
+            app:layout_constraintTop_toBottomOf="@id/ll">
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="喜欢数"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="排名"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="城市"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_xinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="选手信息"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/icon_even2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_xinxi" />
+
+        <TextView
+            android:id="@+id/text_wanglele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+
+            android:text="王乐乐"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/image2"
+            app:layout_constraintTop_toTopOf="@+id/image2" />
+
+        <TextView
+            android:id="@+id/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="性别：男"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/text_wanglele"
+            app:layout_constraintTop_toBottomOf="@+id/text_wanglele" />
+
+        <TextView
+            android:id="@+id/text_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="年龄：11岁"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/text_size"
+            app:layout_constraintTop_toBottomOf="@+id/text_size" />
+
+        <TextView
+            android:id="@+id/text_leixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="参赛类型：小提琴演奏"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/text_age"
+            app:layout_constraintTop_toBottomOf="@+id/text_age" />
+
+        <TextView
+            android:id="@+id/text_stud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="指导学校：音符音乐学校"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/text_leixing"
+            app:layout_constraintTop_toBottomOf="@+id/text_leixing" />
+
+        <TextView
+            android:id="@+id/text_tech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="指导教师：王桂丽"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="@+id/text_stud"
+            app:layout_constraintTop_toBottomOf="@+id/text_stud" />
+
+        <TextView
+            android:id="@+id/text_zuoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="选手信息"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/image2"
+            app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:layout_marginTop="@dimen/dp_5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_even3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_zuoping" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="@id/image4"
+            app:layout_constraintTop_toBottomOf="@id/image4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="作品说明："
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="《xxx进行曲》xxxxxxx"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="作品编号："
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="123456789"
+                android:textSize="@dimen/dp_10" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape1"
+            android:text="投  票"
+            android:textColor="#fff"
+            android:textSize="@dimen/dp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+
+        android:id="@+id/image5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_even4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
