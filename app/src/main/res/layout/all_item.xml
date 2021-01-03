@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_all"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/all_title"
+            android:textColor="@color/tvBlack"
+            android:textSize="@dimen/dp_20"
+            android:text="钢琴一对一陪练课程"
+            android:layout_marginLeft="@dimen/dp_6"
+            app:layout_constraintLeft_toRightOf="@+id/img_all"
+            app:layout_constraintTop_toTopOf="@id/img_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/all_teacher"
+            android:text="金月月老师"
+            android:layout_marginLeft="@dimen/dp_6"
+            app:layout_constraintTop_toBottomOf="@id/all_title"
+            app:layout_constraintLeft_toRightOf="@id/img_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/all_hour"
+            android:text="200/小时"
+            android:layout_marginLeft="@dimen/dp_6"
+            app:layout_constraintLeft_toRightOf="@id/img_all"
+            app:layout_constraintBottom_toBottomOf="@id/img_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
